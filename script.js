@@ -7,20 +7,29 @@ function exibir_verificacao(texto) {
     document.getElementById("output").innerHTML = texto;
 }
 
+function mostrar_palavra_reversa(palavra_correta, palavra_reversa) {
+    document.getElementById("palavra-reversa").innerHTML = `${palavra_correta} ao contrario é: ${palavra_reversa}`;
+}
+
 function verificar() {
     let input =  get_input()
     let reverso = [];
+    let palavra_reversa = "";
+    let diagnostico = "é palindromo"
 
     for (let i = input.length - 1; i >= 0; i--) {
         reverso.push(input[i])
     }
     
-    // preciso fazer checar se cada index nos dois arrays 
-    // é parecido, é palindromo se todos forem.
     for (let i in input) {
         if (input[i] != reverso[i]) {
-            exibir_verificacao("não é palindromo!")
+            diagnostico = "não é palindromo"
         }
     }
-    
+    exibir_verificacao(diagnostico)
+
+    for (let i in reverso) {
+        palavra_reversa += reverso[i]
+    }
+    mostrar_palavra_reversa(input, palavra_reversa)
 }
