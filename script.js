@@ -13,7 +13,7 @@ function mostrar_palavra_reversa(palavra_correta, palavra_reversa) {
 
 function verificar() {
     let input =  get_input()
-    let reverso = [];
+    const reverso = [];
     let palavra_reversa = "";
     let diagnostico = "é palindromo"
 
