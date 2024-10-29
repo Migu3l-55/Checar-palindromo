@@ -1,0 +1,40 @@
+body {
+    background-color: lightgrey;
+}
+
+header h1 {
+    color: greenyellow;
+    text-shadow: 3px 2px 2px gray;
+    background-color: black;
+    margin: 0;
+}
+
+fieldset { margin-top: 10px;}
+
+fieldset.input p {
+    margin: 0;
+    width: 60%;
+    display: block;
+}
+
+div.input {
+    margin-top: 10px;
+}
+
+div.output {
+    border: 1px solid greenyellow;
+
+}
+
+p.output {
+    display: inline-block;
+}
+
+
+p.reverso {
+    color: greenyellow;
+    background-color: grey;
+    text-shadow: 0 0 2px black;
+    width: 100%;
+    text-align: center;
+}

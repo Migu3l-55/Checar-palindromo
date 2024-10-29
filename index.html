@@ -4,21 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palindromo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body id="teste">
     <header>
         <h1>Checar palindromo</h1>
-        <p>escreva a sua palavra no campo de texto abaixo e <br>
-        em seguida clique no botão "Verificar"</p>
+
     </header>
 
     <fieldset>
-        <input id="input" type="text">
-        <button type="button" onclick="verificar()">Verificar</button>
+        <p>escreva a sua palavra no campo de texto abaixo e em seguida clique no botão "Verificar"</p>
+        <div class="input">
+            <input id="input" type="text">
+            <button type="button" onclick="verificar()">Verificar</button>
+        </div>
     </fieldset>
 
-    <p id="output"></p>
-    <p id="palavra-reversa"></p>
+    <fieldset class="output">
+        <p class="output">Resultado: <p id="output" style="display: inline;"></p></p>
+        <p class="output reverso" id="palavra-reversa"></p>
+    </fieldset>
+    
 
     <script src="script.js"></script>
 </body>

@@ -4,7 +4,7 @@ function get_input() {
 }
 
 function exibir_verificacao(texto) {
-    document.getElementById("output").innerHTML = texto;
+    document.getElementById("output").innerHTML = " "+ texto;
 }
 
 function mostrar_palavra_reversa(palavra_correta, palavra_reversa) {
